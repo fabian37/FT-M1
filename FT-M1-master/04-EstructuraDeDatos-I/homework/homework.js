@@ -9,17 +9,12 @@ function nFactorial(n) {
 
 // EJERCICIO 2
 function nFibonacci(n) {
-   if (n<=1) return n
+   if (n < 0) return 'Es un valor negativo'
+   if (n===0 || n===1) return n
    return nFibonacci(n-1) + nFibonacci(n-2)
 }
-// function nFibonacci(n) {
-//    if (n===0) return 0
-//    if (n===1) return 1
-//    return nFibonacci(n-1) + nFibonacci(n-2)
-//  }
 
 // EJERCICIO 3
-// //funcion constructura
 //clases ECMAscript 2015
 class Queue {
    constructor () {
@@ -35,6 +30,8 @@ class Queue {
       return this.array.length
    }
 }
+
+// //funcion constructura
 // function Queue() {
 //    this.array = [];
 // }
@@ -47,6 +44,7 @@ class Queue {
 // Queue.prototype.size = function() {
 //    return this.array.length;
 // }
+// let laFilaDelBanco = new Queue()
 
 
 // No modifiquen nada debajo de esta linea
